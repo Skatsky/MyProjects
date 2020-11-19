@@ -45,7 +45,7 @@
         <div class="el-wr flex-wr">
           <p class="radio-desc">Лечащий врач:</p>
           <div class="radio-wrapper">
-            <select name="group-wrapper">
+            <select name="group-wrapper" class="group-wrapper">
               <option value="vip">Иванов</option>
               <option value="problematic">Захаров</option>
               <option value="OMC">Чернышева</option>
