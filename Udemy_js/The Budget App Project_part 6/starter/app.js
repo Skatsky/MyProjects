@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 // BUDGET CONTROLLER
 var budgetController = (function() {
     
@@ -437,4 +436,4 @@ var controller = (function(budgetCtrl, UICtrl) {
 })(budgetController, UIController);
 
 controller.init();
->>>>>>> 1c8b4aefcaba5aa29224a59d9b20c3d914d8b259
+
