@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  line-height: 24px;
+}
+
+.header {
+  background-image: url(../img/bg_day.png);
+  width: 100%;
+  height: auto;
+}
+
+.header__container {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.header__search-field-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.header__search-field-input {
+  border-radius: 50px;
+  border: 0px;
+  width: 100%;
+  height: 60px;
+  padding-left: 5%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__search-field-input:focus {
+  outline: none;
+  border: 0px;
+}
+
+.header__search-list-non-result {
+  display: none;
+  border-radius: 50px;
+  border: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  margin-top: 10px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px 0px grey;
+  color: gray;
+}
+
+.header__search-list-avaiable-results {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  margin-top: 10px;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 5px 15px 0px grey;
+}
+
+.search-list__result {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.search-list__result:hover {
+  background-color: #90CAF9;
+  color: white;
+}
+
+.header__search-field-button {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 2%;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #90CAF9;
+  cursor: pointer;
+}
+
+.header__search-field-icon {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+}
+
+.header__search-result {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.header__search-result-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__search-result-left {
+  display: flex;
+}
+
+.header__search-result-left-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+.header__search-result-left-icon img {
+  margin: 0 auto;
+  display: block;
+}
+
+.header__search-result-left-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.header__search-result-left-temp {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.header__help-elem {
+  visibility: hidden;
+}
+
+.light-text {
+  color: #9E9E9E;
+}
+
+.bold-text {
+  font-weight: 500;
+}
+
+.header__search-result-main-right {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: space-between;
+  line-height: 27px;
+}
+
+.header__search-result-right-city {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.header__search-result-tepm {
+  display: flex;
+  border-top: 1px solid #BFDCE8;
+}
+.header__search-result-tepm:nth-child(odd) {
+  border-left: 1px solid black;
+}
+
+.header__search-result-separator {
+  content: "";
+  border: 0.1px solid #BFDCE8;
+  margin-top: 20px;
+}
+
+.header__search-result-tepm-wrapper {
+  display: flex;
+  margin: 20px 0px 0px 0px;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+.header__search-result-tepm-wrapper .light-text {
+  margin-bottom: 5px;
+}
+.header__search-result-tepm-wrapper::before {
+  border: 1px solid red;
+}
+
+.header__search-result-temp-min {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.header__search-result-temp-max {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.main {
+  overflow: auto;
+}
+
+.title-def {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: center;
+}
+
+.main__container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.main__pop-cities-wrapper {
+  text-align: center;
+}
+
+.main__pop-cities-desc {
+  margin-top: 70px;
+  width: 55%;
+  margin: 50px auto 35px auto;
+}
+
+.main__pop-cities-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__pop-cities-card {
+  cursor: pointer;
+  height: 220px;
+  width: 220px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  color: black;
+}
+.main__pop-cities-card:hover {
+  height: 240px;
+  width: 240px;
+  transition: 0.5s;
+}
+
+.main__card-desc {
+  background-color: white;
+  width: 90%;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 6%;
+  left: 5%;
+  font-weight: 500;
+}
+
+.main__question-desc {
+  margin-top: 100px;
+  margin-bottom: 35px;
+}
+
+.main__questions-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main__question-item {
+  margin-bottom: 20px;
+}
+
+.main__question-item:target .main__question-answer {
+  max-height: 20em;
+}
+
+.main__question-item:target .chevron-up {
+  display: block;
+}
+
+.main__question-item:target .chevron-down {
+  display: none;
+}
+
+.main__question-question {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #FAFAFA;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+}
+.main__question-question .chevron-up {
+  display: none;
+}
+
+.main__question-answer {
+  margin-top: 5px;
+  background-color: #FAFAFA;
+  border-radius: 30px;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: 1s;
+}
+.main__question-answer p {
+  padding: 15px 20px;
+}
+
+.footer {
+  height: 100px;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .main__container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .header__container {
+    width: 60%;
+  }
+
+  .main__pop-cities-cards {
+    flex-direction: column;
+  }
+
+  .main__pop-cities-card {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__search-list-non-result {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header__container {
+    width: 98%;
+  }
+
+  .main__container {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

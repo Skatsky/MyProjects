@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Weather Live</title>
+</head>
+<body>
+    <header class="header" id="widget">
+        <div class="header__container">
+            <div class="header__search-field-wrapper">
+                <input type="text" class="header__search-field-input" onkeyup="press()" placeholder="Start typing to search...">
+                <div class="header__search-field-button">
+                    <i class="fas fa-search header__search-field-icon"></i>
+                </div>
+            </div>
+            <div class="header__search-list-wrapper">
+                <span class="header__search-list-non-result">
+                    City not found, please try to change your search query
+                </span>
+                <div class="header__search-list-avaiable-results">
+                    <div class="search-list__result" onclick="showListItem()">
+                        <span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__search-result">
+                <div class="header__search-result-main">
+                    <div class="header__search-result-left">
+                        <div class="header__search-result-left-icon"></div>
+                        <div class="header__search-result-left-info">
+                            <span class="header__search-result-left-temp bold-text"></span>
+                            <span class="header__search-result-left-weather"></span>
+                            <span class="header__search-result-left-weather-add light-text"></span>
+                        </div>
+                    </div>
+                    <div class="header__search-result-main-right">
+                        <span class="header__search-result-right-city bold-text"></span>
+                        <span class="header__search-result-right-date light-text"></span>
+                        <span class="header__help-elem"></span>
+                    </div>
+                </div>
+                <div class="header__search-result-tepm">
+                    <div class="header__search-result-tepm-wrapper">
+                        <span class="light-text">Min</span>
+                        <div class="header__search-result-temp-min bold-text"><span></span></div>
+                    </div>
+                    <div class="header__search-result-separator"></div>
+                    <div class="header__search-result-tepm-wrapper">
+                        <span class="light-text">Max</span>
+                        <div class="header__search-result-temp-max bold-text"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__container">
+            <div class="main__pop-cities-wrapper">
+                <h2 class="main__pop-cities-desc title-def">
+                    Check the weather in most popular cities in the world
+                </h2>
+                <div class="main__pop-cities-cards">
+                    <a href="#widget" class="main__pop-cities-card popular-newYork">
+                        <div class="main__card-desc">
+                            <span>
+                                New York
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#widget" class="main__pop-cities-card popular-london">
+                        <div class="main__card-desc">
+                            <span>
+                                London
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#widget" class="main__pop-cities-card popular-dubai">
+                        <div class="main__card-desc">
+                            <span>
+                                Dubai
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#widget" class="main__pop-cities-card popular-paris">
+                        <div class="main__card-desc">
+                            <span>
+                                Paris
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main__questions-wrapper">
+                <h2 class="main__question-desc title-def">
+                    Frequently Asked Questions
+                </h2>
+                <div class="main__questions-wrapper">
+                    <div class="main__question-item" id="question1">
+                        <a href="#question1" class="main__question-question">
+                            Question 1
+                            <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>
+                            <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>
+                        </a>
+                        <div class="main__question-answer">
+                            <p>
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__question-item" id="question2">
+                        <a href="#question2" class="main__question-question">
+                            Question 2
+                            <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>
+                            <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>
+                        </a>
+                        <div class="main__question-answer">
+                            <p>
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__question-item" id="question3">
+                        <a href="#question3" class="main__question-question">
+                            Question 3
+                            <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>
+                            <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>
+                        </a>
+                        <div class="main__question-answer">
+                            <p>
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__question-item" id="question4">
+                        <a href="#question4" class="main__question-question">
+                            Question 4
+                            <ion-icon name="chevron-down-outline" class="chevron-down"ion-icon>
+                            <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>
+                        </a>
+                        <div class="main__question-answer">
+                            <p>
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <p>
+                Oleh Prytotskyi - 2021
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/153810db7b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
