@@ -17,6 +17,7 @@ let icons = document.querySelector('.header__search-result-left-icon');
 let nonRes = document.querySelector('.header__search-list-non-result');
 let listResults = document.querySelector('.header__search-list-avaiable-results');
 let listResultsItem = document.querySelector('.search-list__result');
+let footerYear = document.querySelector('.footer__content');
 let newYork = document.querySelector('.popular-newYork');
 let london = document.querySelector('.popular-london');
 let dubai = document.querySelector('.popular-dubai');
@@ -199,6 +200,10 @@ function KeyCheck(event) {
         console.log(query.value.split(''))
     }
 }
+
+// Footer year
+let dateFooter = new Date;
+footerYear.innerHTML = `<p>Oleh Prytotskyi - ${dateFooter.getFullYear()}<p>`;
 
 nightBg();
 reloadData ();
