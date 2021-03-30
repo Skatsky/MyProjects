@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 554px;
+    margin: 120px auto 0 auto;
+}
+.container input {
+    margin: 0 0 0 auto;
+    display: block;
+}
+.element {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    height: 35px;
+    border-radius: 20px;
+    padding: 0px 9px;
+    margin-left: 3px;
+}
+.container-element {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 97%;
+    height: 41px;
+    background-color: lightcyan;
+}
+.search__wrapper {
+    height: 41px;
+    display: flex;
+    background-color: lightblue;
+    margin: 0 0 0 auto;
+    border-radius: 20px;
+}
+.search__wrapper input {
+    margin: 0px auto;
+    display: block;
+    width: 90%;
+    background-color: lightblue;
+    border-style: hidden;
+}
+.search__wrapper input:focus {
+    outline: none
+}
+.table__wrapper {
+    min-height: 47px;
+    padding-left: 0px;
+    height: 100%;
+    background-color: lightblue;
+    border-radius: 30px;
+    overflow: auto;
+    margin-top: 4px;
+    padding-bottom: 10px;
+}
+.members {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.member__num {
+    display: block;
+    padding: 0;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+}
+.member__name {
+    width: 150px;
+}
+.member__shots {
+    padding: 0 3px;
+}
+.member__shots-res {
+    height: 31px;
+    width: 31px;
+    margin: 1px;
+    background-color: black;
+    border-radius: 50%;
+}
+.member__fr {
+    width: 40px;
+    justify-content: center;
+}
+.members__info-wrapper {
+    background-color: lightblue;
+    border-radius: 30px;
+    overflow: auto;
+    margin-top: 10px;
+}
+.members__info-container {
+    margin: 3px auto;
+}
+.member__total-time {
+    justify-content: center;
+    width: 70px;
+}
+.info__number {
+    width: 35px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    padding: 0;
+}
+.info__name {
+    width: 150px;
+}
+.info__shots {
+    width: 153px;
+}
+.info__fr {
+    width: 40px;
+    justify-content: center;
+}
+.info__total-time {
+    width: 70px;
+}
+.res-true {
+    background-color: royalblue;
+}
+.sort {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: calc(100% - 104px);
+    background-color: lightblue;
+    border-style: hidden;
+    width: 99px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 0px 9px;
+}
+.sort:focus {
+    outline: none;
+}

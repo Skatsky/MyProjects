@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search__wrapper">
+            <input type="text" placeholder="Input the member name..." class="search-field">
+        </div>
+        <select name="sort-by" id="sort-by" class="sort" onchange="tableSort()">
+            <option value="total-time">Total time:</option>
+            <option value="name">Name</option>
+            <option value="accuracy">Accuracy</option>
+            <option value="fire-rate">Fire rate</option>
+        </select>
+        <div class="members__info-wrapper">
+            <div class="members__info-container container-element">
+                <div class="info__number element">
+                    <span>№</span>
+                </div>
+                <div class="info__name element">
+                    Name:
+                </div>
+                <div class="info__shots element">
+                    Shots:
+                </div>
+                <div class="info__fr element">
+                    F/R
+                </div>
+                <div class="info__total-time element">
+                    Total time:
+                </div>
+            </div>
+        </div>
+        <ul class="table__wrapper">
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+            <li class="members container-element">
+                <div class="member__num element"></div>
+                <div class="member__name element"></div>
+                <div class="member__shots element"></div>
+                <div class="member__fr element"></div>
+                <div class="member__total-time element"></div>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
